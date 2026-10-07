@@ -1,0 +1,18 @@
+[
+  {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "logined" : true
+
+  },
+
+  {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "logined" : false  
+}
+]
+
+
+
+
