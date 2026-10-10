@@ -3,7 +3,7 @@ import users from "../test-data/users.json" with { type: "json" };
 import { InventoryPage } from "../pages/Inventory";
 
 for (const user of users) {
-  test.only(`login - ${user.username}`, async ({ page }) => {
+  test(`login - ${user.username}`, async ({ page }) => {
     await page.goto("https://www.saucedemo.com");
 
     await page.locator("#user-name").fill(user.username);

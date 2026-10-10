@@ -6,7 +6,7 @@ export class BasePage {
   }
 
   async openUrl(url) {
-    this.page.goto(url);
+    await this.page.goto(url);
   }
 
   async fill(locator, text) {

@@ -1,5 +1,5 @@
 import { BasePage } from "./BasePage";
-import { Routes, TITLES } from "../utils/constants.js";
+import { ROUTES } from "../utils/constants.js";
 
 export class LoginPage extends BasePage {
   /**
@@ -15,7 +15,7 @@ export class LoginPage extends BasePage {
   }
 
   async open() {
-    await this.openUrl("/");
+    await this.openUrl(ROUTES.LOGIN);
   }
 
   async loginFlow() {
