@@ -1,10 +1,13 @@
 import { expect, test } from "@playwright/test";
 import users from "../test-data/users.json" with { type: "json" };
-import { InventoryPage } from "../pages/Inventory";
+import { InventoryPage } from "../pages/Inventory.js";
 
 for (const user of users) {
-  test.only(`login - ${user.username}`, async ({ page }) => {
-    await page.goto("https://www.saucedemo.com");
+  test(`login - ${user.username}`, async ({ page }) => {
+    await page.goto("https://www.saucedemo.com", {
+      waitUntil: "domcontentloaded",
+      timeout: 60000,
+    });
 
     await page.locator("#user-name").fill(user.username);
 

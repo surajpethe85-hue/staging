@@ -9,7 +9,7 @@
   {
     "username": "problem_user",
     "password": "secret_sauce",
-    "logined" : false  
+    "logined" : true
 }
 ]
 

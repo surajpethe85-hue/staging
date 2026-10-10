@@ -1,6 +1,6 @@
 import { expect } from "@playwright/test";
-import { BasePage } from "./BasePage";
-// import { TITLES } from "../utils/constants.js";
+import { BasePage } from "./BasePage.js";
+//import { TITLES } from "../utils/constants.js";
 
 export class InventoryPage extends BasePage {
   /**

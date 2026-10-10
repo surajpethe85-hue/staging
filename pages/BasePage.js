@@ -6,7 +6,7 @@ export class BasePage {
   }
 
   async openUrl(url) {
-    this.page.goto(url);
+    await this.page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
   }
 
   async fill(locator, text) {
