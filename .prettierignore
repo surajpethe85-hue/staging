@@ -1,0 +1,40 @@
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Test results
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Generated reports
+reports/
+html-report/
+json-report/
+junit-report/
+coverage/
+
+# Screenshots and videos
+screenshot/
+screenshots/
+videos/
+
+# Package lock file
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build output
+dist/
+build/

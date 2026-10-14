@@ -1,0 +1,23 @@
+{
+  "standard": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Works normally"
+  },
+  "lockedOut": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "description": "Cannot log in - locked out",
+    "expectedError": "Epic sadface: Sorry, this user has been locked out."
+  },
+  "problem": {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "description": "Has UI/product issues but can log in"
+  },
+  "performance": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "description": "Logs in with a performance delay"
+  }
+}

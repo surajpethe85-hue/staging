@@ -1,0 +1,51 @@
+{
+  "validCustomers": [
+    {
+      "testId": "TC_CHECKOUT_01",
+      "firstName": "John",
+      "lastName": "Doe",
+      "postalCode": "12345",
+      "description": "Standard US customer"
+    },
+    {
+      "testId": "TC_CHECKOUT_02",
+      "firstName": "Priya",
+      "lastName": "Sharma",
+      "postalCode": "560001",
+      "description": "Indian customer"
+    },
+    {
+      "testId": "TC_CHECKOUT_03",
+      "firstName": "Liam",
+      "lastName": "O'Brien",
+      "postalCode": "D02X285",
+      "description": "Customer with special char in last name"
+    }
+  ],
+  "invalidCustomers": [
+    {
+      "testId": "TC_CHECKOUT_04",
+      "firstName": "",
+      "lastName": "Doe",
+      "postalCode": "12345",
+      "description": "Missing first name",
+      "expectedError": "Error: First Name is required"
+    },
+    {
+      "testId": "TC_CHECKOUT_05",
+      "firstName": "John",
+      "lastName": "",
+      "postalCode": "12345",
+      "description": "Missing last name",
+      "expectedError": "Error: Last Name is required"
+    },
+    {
+      "testId": "TC_CHECKOUT_06",
+      "firstName": "John",
+      "lastName": "Doe",
+      "postalCode": "",
+      "description": "Missing postal code",
+      "expectedError": "Error: Postal Code is required"
+    }
+  ]
+}

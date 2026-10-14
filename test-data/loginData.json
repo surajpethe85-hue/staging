@@ -1,0 +1,53 @@
+{
+  "validLogin": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Valid standard user login"
+  },
+  "invalidCredentials": [
+    {
+      "testId": "TC_LOGIN_01",
+      "username": "invalid_user",
+      "password": "secret_sauce",
+      "description": "Invalid username",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "testId": "TC_LOGIN_02",
+      "username": "standard_user",
+      "password": "wrong_password",
+      "description": "Invalid password",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "testId": "TC_LOGIN_03",
+      "username": "STANDARD_USER",
+      "password": "secret_sauce",
+      "description": "Username is case sensitive",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    }
+  ],
+  "emptyCredentials": [
+    {
+      "testId": "TC_LOGIN_04",
+      "username": "",
+      "password": "secret_sauce",
+      "description": "Empty username",
+      "expectedError": "Epic sadface: Username is required"
+    },
+    {
+      "testId": "TC_LOGIN_05",
+      "username": "standard_user",
+      "password": "",
+      "description": "Empty password",
+      "expectedError": "Epic sadface: Password is required"
+    },
+    {
+      "testId": "TC_LOGIN_06",
+      "username": "",
+      "password": "",
+      "description": "Empty username and password",
+      "expectedError": "Epic sadface: Username is required"
+    }
+  ]
+}
